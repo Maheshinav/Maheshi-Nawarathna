@@ -1,0 +1,271 @@
+.heroImageContainer {
+    width: 100%;
+}
+
+.heroImage {
+    background-image: url("https://res.cloudinary.com/dchzjr4bz/image/upload/v1702692968/UIPS_2_tzz1zu.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 22rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vw * 9 / 16);
+    position: relative;
+}
+
+.heroImageText {
+    font-size: 2rem;
+    color: white;
+    opacity: 0;
+}
+.maheshiText {
+    color: #c95164; /* Navy Blue */
+}
+
+
+.heroButton:hover {
+    background-color: #ff1493;
+    border-radius: 0;
+}
+
+@media (min-width: 400px) and (max-width: 634px) {
+    .heroImage {
+        height: 22rem;
+    }
+
+    .heroParagraph {
+        font-size: 1rem;
+
+    }
+
+    .heroContentWrapper {
+        margin-top: 4rem;
+    }
+
+
+}
+
+@media (min-width: 635px) and (max-width: 767px) {
+    .heroImage {
+        height: calc(27rem - (767px - 100vw) * (5 / 133));
+    }
+
+    .heroContent {
+        width: 16rem;
+
+    }
+
+    .heroParagraph {
+        margin-left: -0.5rem;
+        font-size: 0.99rem;
+
+    }
+
+    .heroImageText {
+        font-size: 2.5rem;
+        width: 16rem;
+
+    }
+
+    .heroContentWrapper {
+        margin-top: 10rem;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1215px) {
+    .heroImage {
+        height: 42rem;
+    }
+
+    .heroParagraph {
+        font-size: 1.3rem;
+        width: 26rem;
+        margin-left: 2rem;
+    }
+
+    .heroImageText {
+        font-size: 3.1rem;
+        width: 20rem;
+    }
+
+    .buttonContainer {
+        position: absolute;
+        bottom: 2rem;
+        left: 50%;
+        transform: translateX(-50%);
+        width: auto;
+    }
+
+    .heroContentWrapper {
+        margin-top: 0;
+    }
+}
+
+
+@media (min-width: 1216px) and (max-width: 1279px) {
+    .heroImage {
+        height: calc(42rem + (1279px - 100vw) * (6 / 63));
+    }
+
+    .heroParagraph {
+        font-size: 1.3rem;
+        width: 26rem;
+        margin-left: 2rem;
+    }
+
+    .heroImageText {
+        font-size: 3.5rem;
+        width: 22rem;
+    }
+    .buttonContainer {
+        position: absolute;
+        bottom: 2rem;
+        left: 50%;
+        transform: translateX(-50%);
+        width: auto;
+    }
+    .heroContentWrapper {
+        margin-bottom: -4rem;
+    }
+}
+
+@media (min-width: 1280px) and (max-width: 1382px) {
+    .heroImage {
+        height: 48rem;
+    }
+
+    .heroParagraph {
+        font-size: 1.3rem;
+        width: 26rem;
+        margin-left: 2rem;
+    }
+
+    .heroImageText {
+        font-size: 3.5rem;
+        width: 22rem;
+    }
+ .buttonContainer {
+        position: absolute;
+        bottom: 2rem;
+        left: 50%;
+        transform: translateX(-50%);
+        width: auto;
+    }
+    .heroContentWrapper {
+        margin-bottom: -4rem;
+    }
+
+}
+
+@media (min-width: 1383px) {
+    .heroImage {
+        height: calc(100vw * 9 / 16);
+    }
+
+
+    .heroParagraph {
+        font-size: 1.3rem;
+        width: 26rem;
+        margin-left: 2rem;
+    }
+
+    .heroImageText {
+        font-size: 4rem;
+        width: 25rem;
+    }
+
+    .heroContent {
+        margin-top: 6rem;
+    }
+
+    .buttonContainer {
+        position: absolute;
+        bottom: 2rem;
+        left: 50%;
+        transform: translateX(-50%);
+        width: auto;
+    }
+    .heroContentWrapper {
+        margin-bottom: -4rem;
+    }
+
+}
+
+
+
+
+.heroOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+
+.heroImageText,
+.heroParagraph {
+    position: relative;
+    z-index: 2;
+    color:#52525B;
+
+}
+
+.heroContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 14rem;
+    margin-left: 1rem;
+}
+
+.heroButton {
+    padding: 0.75rem 1.5rem;
+    background-color:#e17285;
+    color: white;
+    border-radius: 0px;
+    cursor: pointer;
+    margin-top: 1rem;
+    transition: background-color 0.3s ease;
+    z-index: 2;
+    cursor: pointer;
+    z-index: 10; 
+}
+
+.heroButton:hover {
+    background-color: #c95164;
+    border-radius: 0;
+}
+
+.buttonContainer {
+    margin-top: 2rem;
+     z-index: 2;
+}
+
+.heroContentWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.bouncingBallsContainer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+.bouncingBall {
+    position: absolute;
+    border-radius: 50%;
+    background-color: #ff1493; /* example color */
+    width: 20px;
+    height: 20px;
+    opacity: 0.6;
+}

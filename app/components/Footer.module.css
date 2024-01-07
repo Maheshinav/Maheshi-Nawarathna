@@ -1,0 +1,24 @@
+.footerItems{
+display:flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+background-color:#e17285;
+color:#eaafb9;
+}
+
+.socialLinks {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 14rem;
+
+}
+
+
+.emailText {
+  font-size: 0.80rem;
+  font-weight: bold;
+  letter-spacing: normal;
+
+}

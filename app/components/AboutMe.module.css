@@ -1,0 +1,393 @@
+.aboutMeSection {
+  width: 100%;
+  height: 100vh;
+  background-image: url('https://res.cloudinary.com/dchzjr4bz/image/upload/v1703300545/Pastel_Half_Rainbow_-_Left_-_30x40cm___No_frame_obpdzj.jpg');
+  background-size: cover;
+  background-position: 0% 50%;
+  position: relative;
+  overflow: hidden;
+ backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  animation: zoomBackground 20s ease-in-out infinite;
+  }
+
+  /* Define the keyframes for the animation */
+ @keyframes zoomBackground {
+    0%, 100% {
+      background-size: 100%;
+    }
+    50% {
+      background-size: 120%; /* Adjust for desired zoom level */
+    }
+  }
+
+
+.aboutMeSection::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  pointer-events: none;
+}
+
+.aboutMeContent {
+  position: absolute;
+  top: 1.5rem;
+  left: 1.5rem;
+  right: 1.5rem;
+  bottom: 1.5rem;
+  background: white;
+  padding: 0;
+  overflow-y: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: rgba(255, 255, 255, 0.8); 
+}
+
+.aboutMeContent::-webkit-scrollbar {
+  display: none;
+}
+
+
+.aboutMeImage {
+  margin: 3rem;
+}
+
+/* Media Queries */
+@media (min-width: 400px) and (max-width: 634px) {
+  .aboutMeContent p:first-child {
+    font-style: italic;
+    font-size: 0.99rem;
+  }
+
+  .aboutMeContent p {
+    font-size: 0.95rem;
+    line-height: 1.6rem;
+  }
+}
+
+@media (min-width: 635px) and (max-width: 767px) {
+  .aboutMeContent p:first-child {
+    font-style: italic;
+    font-size: 0.99rem;
+  }
+
+  .aboutMeContent p {
+    font-size: 0.95rem;
+    line-height: 1.6rem;
+  }
+}
+
+.aboutMeSection .aboutMeContent p {
+  margin-bottom: 2rem;
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
+.headings {
+  margin-bottom: 0;
+  color: #5d5d5d;
+  font-size: 0.95rem;
+}
+
+.technologyText {
+  font-weight: bold;
+  font-size: 0.95rem;
+}
+
+.techHeading {
+  margin-left: 3rem;
+  margin-bottom: 0;
+  font-size: 0.95rem;
+  color: #5d5d5d;
+  line-height: 1.6rem;
+}
+
+.resumeAndProjectsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 1.2rem;
+  margin-left: 3rem;
+
+}
+
+.myProjectsLink {
+  color: hotpink;
+  cursor: pointer;
+  margin-left: 0.5rem;
+  transition: color 0.3s ease;
+}
+
+.buttonLink {
+  background-color: #e4e4e3; 
+  border: 0.15rem solid #c95164;
+  border-radius: 6px;
+  padding: 0.4rem 1.2rem;
+  text-decoration: none;
+  color: #5D656C;
+  margin-top: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  display: block;
+  margin-left: 0;
+  font-size: 0.94rem;
+  font-style: normal;
+  text-align: left;
+  width: 12rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.buttonLink::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(90deg, #F472B6, #DB2777, #BE185D, #F472B6);
+  transition: all 0.5s ease;
+  z-index: -1;
+}
+
+.buttonLink::before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: linear-gradient(90deg, #F472B6, #DB2777, #BE185D, #F472B6);
+  background-size: 400% 400%;
+  border-radius: 6px;
+  z-index: -1;
+  animation: moveGradient 3s linear infinite;
+}
+
+.linksHeadings {
+  font-size: 0.95rem;
+  color: #5D656C;
+  margin-left: 0rem;
+  line-height: 1.6rem;
+}
+
+@keyframes moveGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.resumeButton {
+  margin-bottom: 1rem;
+}
+
+.buttonLink.hovered,
+.buttonLink:hover {
+  color: #BE185D;
+  border-color: #BE185D;
+}
+
+@media (min-width: 768px) and (max-width: 1279px) {
+  .aboutMeContent p:first-child {
+    font-style: italic;
+    font-size: 1.1rem;
+  }
+
+  .aboutMeContent p {
+    font-size: 0.99rem;
+    line-height: 1.8rem;
+  }
+
+  .headings {
+    margin-bottom: 0;
+    color: #5d5d5d;
+    font-size: 1.1rem;
+    line-height: 1.8rem;
+  }
+
+  .technologyText {
+    font-weight: bold;
+    font-size: 0.99rem;
+  }
+
+  .techHeading {
+    margin-bottom: 0;
+    font-size: 0.99rem;
+    color: #5d5d5d;
+    line-height: 1.8rem;
+  }
+
+  .aboutMeContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: auto;
+    padding: 3rem;
+    max-height: calc(100vh - 3rem);
+    max-width: 1200px;
+
+
+  }
+
+
+  .linksHeadings {
+    font-size: 0.99rem;
+    color: #5D656C;
+    margin-left: 0rem;
+    margin-bottom: 0rem;
+    line-height: 1.8rem;
+  }
+
+  .header {
+    font-size: 2rem;
+  }
+
+  .aboutMeImage {
+    margin: 3rem;    /* Adjust margin as needed */
+    width: auto;
+    /* Adjust width to be responsive */
+    max-width: 100%;
+    /* Ensure image doesn't overflow its container */
+    height: auto;
+    align-self: center;
+    /* Center align the image within the flex container */
+  }
+
+
+  .aboutMeImage img {
+    width: 100%;
+    /* Make the image fill the container */
+    height: auto;
+  }
+
+  .aboutMeText {
+    padding-bottom: 3rem;
+    width: 40rem;
+
+  }
+
+  .aboutMeContext{
+  margin-bottom: 3rem;
+  margin-top: 2rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .header {
+    font-size: 2rem;
+  }
+
+  .aboutMeText {
+    width: 40rem; 
+    padding-bottom: 3rem;
+    max-width: calc(100% - 6rem); 
+  }
+
+  .techHeading {
+    margin-bottom: 1rem;
+    font-size: 1.125rem;
+    color: #5d5d5d;
+    line-height: 0.8rem;
+    margin-top: 2rem;
+  }
+
+  .linksHeadings {
+    font-size: 1.125rem;
+    color: #5D656C;
+    margin-left: 0rem;
+    margin-bottom: 0.5rem;
+    line-height: 0.8rem;
+  }
+
+  .aboutMeContent p:first-child {
+    font-style: italic;
+    font-size: 1.2rem;
+  }
+
+  .headings {
+    font-size: 1.3rem;
+  }
+
+  .aboutMeContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    overflow-y: auto;
+    position:absolute;
+    max-height: calc(100vh - 3rem); 
+    margin: 3rem 3rem 3rem 3rem;
+  }
+
+  .technologyText {
+    font-size: 1.125rem;
+  }
+
+  .aboutMeImage img {
+    width: 100%; 
+    height: auto;
+    width: 720px; /* Fixed maximum width */
+    height: 383.03px; /* Fixed maximum height */
+  }
+
+  .aboutMeContext {
+  margin-left: 6rem;
+  margin-top: 4rem !important;
+}
+
+.aboutMeSection {
+    /* Add your animation properties here */
+    /* Example: Animate background position for a moving effect */
+    animation: zoomBackground 20s ease-in-out infinite;
+  }
+
+  /* Define the keyframes for the animation */
+ @keyframes zoomBackground {
+    0%, 100% {
+      background-size: 100%;
+    }
+    50% {
+      background-size: 120%; /* Adjust for desired zoom level */
+    }
+  }
+
+}
+
+.aboutMeImage,
+.aboutMeText {
+  padding-left: 3rem;
+  padding-right: 3rem;
+
+}
+
+.aboutMeContext {
+  margin-left: 6rem;
+  margin-top: 2rem;
+}
+
+.aboutMeImage {
+  margin: 3rem;
+    width: auto; 
+    max-width: 100%; 
+    height: auto;
+    align-self: center;
+    display: flex;
+    justify-content: center;
+
+
+}

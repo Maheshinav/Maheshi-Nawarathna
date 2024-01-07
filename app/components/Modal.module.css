@@ -1,0 +1,268 @@
+.modalBackdrop {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100vw;
+	height: 100vh;
+	background-color: rgba(0, 0, 0, 0.5);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 100000;
+}
+
+.modalContent {
+	display: flex;
+	flex-direction: column;
+	max-width: 1280px;
+	width: 80vw;
+	height: 100vh;
+	overflow: hidden;
+}
+
+.modal-box {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	padding: 0 !important;
+	margin: 0;
+	border-radius: 0;
+}
+
+.imageContainer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+	height: auto;
+	position: relative;
+	border-bottom: 3px solid #1b242f;
+}
+
+.modalImage {
+	width: 100%;
+	height: auto;
+	object-fit: cover;
+	object-position: center top;
+	
+}
+
+.prevButton,
+.nextButton {
+	background: rgba(0, 0, 0, 0.3);
+	bottom: 0;
+	color: #fff;
+	cursor: pointer;
+	font-size: 14pt;
+	font-weight: bold;
+	padding: 10px 15px;
+	position: absolute;
+	transform: translateY(7%);
+	height: 3rem;
+	width: 3rem;
+}
+
+.prevButton {
+	left: 0;
+}
+
+.nextButton {
+	right: 0;
+}
+
+.projectInfo {
+	flex-grow: 1;
+	padding: 0px 7px;
+	overflow: hidden;
+}
+
+.projectDescription,
+.subtitle {
+	margin: 0;
+	font-size: 0.85rem;
+	letter-spacing: normal;
+}
+
+.projectDescription {
+	line-height: 1.3rem;
+	padding-top: 0.1rem;
+	padding-bottom: 0.3rem;
+}
+
+.subtitle {
+	font-size: 0.85rem;
+	color: #3a4046bd;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin-bottom: 0.1rem;
+	border-bottom: 0.5px solid #00000026;
+	line-height: normal;
+}
+
+.closeButtonContainer {
+	display: flex;
+	justify-content: flex-end;
+	justify-content: space-between;
+	width: 100%;
+}
+
+.githubButton {
+	background: #db2777;
+
+	color: white;
+
+	border: none;
+
+	cursor: pointer;
+	font-size: 0.85rem;
+}
+
+.githubButton {
+	width: 5rem;
+
+	height: 2rem;
+}
+
+.closeButton svg {
+	fill: currentColor;
+	width: 15px;
+	height: 15px;
+}
+
+.closeButton {
+	background: none;
+	border: none;
+	cursor: pointer;
+	padding: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+@media screen and (max-width: 767px) {
+	.modalContent {
+		width: 80vw;
+	}
+
+	.carouselContainer {
+		height: 40vh;
+	}
+
+	.projectInfo {
+		flex-grow: 1;
+	}
+
+	.closeButtonContainer {
+		padding: 0;
+	}
+
+	.imageContainer {
+		height: 40vh;
+	}
+
+	.projectName {
+		font-size: 1rem;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 1279px) {
+	.prevButton,
+	.nextButton {
+		height: 4rem;
+		width: 4rem;
+	}
+
+	.modalContent {
+		max-width: 90vw;
+	}
+
+	.imageContainer {
+		top:-1rem;
+	}
+.modal-box{
+max-width:90vw;
+
+}
+	.projectInfo {
+		width: 100%;
+
+	}
+
+	.projectDescription {
+		font-family: "OpenSans", sans-serif;
+		font-size: 1.125rem;
+		font-style: normal;
+		font-weight: normal;
+		letter-spacing: 0.063rem;
+		line-height: 2rem;
+		color: #5d656c;
+		margin-bottom: 2rem;
+	}
+
+	.subtitle {
+		font-size: 1.3rem;
+	}
+
+	.projectInfo {
+		padding: 10px 15px;
+	}
+
+	.githubButton {
+		width: 7rem;
+		height: 3rem;
+	}
+
+	.closeButton svg {
+		fill: currentColor;
+		width: 20px;
+		height: 20px;
+	}
+
+
+}
+@media (min-width: 1280px) {
+	.modalContent {
+		max-width: 50vw;
+	}
+
+	.modal-box {
+		max-width: 50vw;
+	}
+
+	.closeButton svg {
+		fill: currentColor;
+		width: 20px;
+		height: 20px;
+	}
+
+	.projectDescription {
+		font-family: "OpenSans", sans-serif;
+		font-size: 1.125rem;
+		font-style: normal;
+		font-weight: normal;
+		letter-spacing: 0.063rem;
+		line-height: 2rem;
+		color: #5d656c;
+		margin-bottom: 0.5rem;
+	}
+
+	.subtitle {
+		font-size: 1.2rem;
+	}
+
+	.projectInfo {
+		padding: 10px 15px;
+	}
+
+	.githubButton {
+		width: 7rem;
+		height: 2rem;
+	}
+
+	.imageContainer {
+		top: -1rem;
+	}
+}

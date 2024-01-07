@@ -1,0 +1,48 @@
+.myProjectsHeadings{
+text-align: center;
+padding-top:3rem;
+padding-bottom: 3rem;
+background-color:#e7e6e2;
+
+}
+
+.myProjectsTabs{
+display:flex;
+justify-content: space-evenly;
+align-items: center;
+background-color:#e7e6e2;
+padding-bottom: 0.5rem;
+}
+
+.myProjectsTabButtons{
+background-color: none;
+}
+
+.tabs-boxed{
+background-color: hotpink;
+border-radius: 0;
+
+}
+.activeTab {
+  background-color:#c95164; 
+  color: white; 
+  width:10rem;
+  border-radius: 0%;
+}
+
+@media (min-width: 768px) and (max-width: 1279px) {
+.myProjectsTabs{
+  align-items: center;
+  justify-content: center;
+  
+  }
+}
+
+@media (min-width: 1280px) {
+.myProjectsTabs{
+  align-items: center;
+  justify-content: center;
+  
+  }
+
+}

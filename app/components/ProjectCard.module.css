@@ -1,0 +1,61 @@
+.projectName {
+	font-size: 16px;
+	margin-bottom: 10px;
+	text-align: center;
+	font-weight: bold;
+}
+
+.technologies {
+	text-align: center;
+	font-size: 14px;
+	color: #666;
+	margin-bottom: 20px;
+	color: #c95164
+}
+
+.projectButton {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%) translateY(50px);
+	background-color: transparent;
+	bottom: 50px;
+	border: 2px solid #c95164;
+	font-size: 13pt;
+	padding: 7px 0;
+	width: 170px;
+	cursor: pointer;
+	transform: translate Y (50px);
+	transition: transform 0.3s ease 0.1s;
+	transition-delay: 0.15s;
+}
+
+.overlayContent {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+	transform: translateY(-50px);
+	transition: transform 0.3s ease;
+	transition-delay: 0s;
+}
+
+.projectButton:hover {
+	background-color: #c95164;
+	color: #fff;
+}
+
+.projectImage {
+	width: 100%;
+	height: auto;
+}
+
+.projectCard:hover .overlayContent,
+.projectCard:hover .projectButton {
+	opacity: 1;
+	transform: translateY(0);
+}
+
+.projectCard:hover .projectButton {
+	transform: translateX(-50%) translateY(0);
+}
