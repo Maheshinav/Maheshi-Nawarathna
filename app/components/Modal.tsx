@@ -28,7 +28,7 @@ const Modal: React.FC<ModalProps> = ({
 
 	useEffect(() => {
 		const adjustImageContainer = () => {
-			if (window.innerWidth < 885) {
+			if (window.innerWidth < 0) {
 				const img = new Image();
 				img.src = images[currentImageIndex]; // Use images from props
 				img.onload = () => {
