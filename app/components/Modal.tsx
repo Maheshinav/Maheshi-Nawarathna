@@ -30,7 +30,7 @@ const Modal: React.FC<ModalProps> = ({
 		const adjustImageContainer = () => {
 			if (window.innerWidth < 0) {
 				const img = new Image();
-				img.src = images[currentImageIndex]; // Use images from props
+				img.src = images[currentImageIndex];
 				img.onload = () => {
 					const imgWidth = img.naturalWidth;
 					const imgHeight = img.naturalHeight;
@@ -93,8 +93,7 @@ const Modal: React.FC<ModalProps> = ({
 					<img
 						src={images[currentImageIndex]}
 						alt={`Slide ${currentImageIndex + 1}`}
-						// Adjust as necessary (e.g., "contain", "cover", etc.)width={16}   // Aspect ratio width
-						height={9} // Aspect ratio height
+						height={9}
 						className={modalStyles.modalImage}
 					/>
 					<button

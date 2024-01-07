@@ -18,7 +18,6 @@ const Hero: React.FC<HeroProps> = ({ id }) => {
 	const buttonRef = useRef<HTMLButtonElement>(null);
 
 	useEffect(() => {
-		// Animation for the heading
 		gsap.fromTo(
 			h1Ref.current,
 			{ opacity: 0, y: -20 },
@@ -54,9 +53,7 @@ const Hero: React.FC<HeroProps> = ({ id }) => {
 						<h1 ref={h1Ref} className={styles.heroImageText}>
 							I'm <span className={styles.maheshiText}>Maheshi</span>
 						</h1>
-						<p ref={pRef} className={styles.heroParagraph}>
-							{/* This text will be replaced by the GSAP animation */}
-						</p>
+						<p ref={pRef} className={styles.heroParagraph}></p>
 					</div>
 					<div className={styles.buttonContainer}>
 						<button

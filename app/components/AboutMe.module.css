@@ -6,20 +6,23 @@
   background-position: 0% 50%;
   position: relative;
   overflow: hidden;
- backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   animation: zoomBackground 20s ease-in-out infinite;
+}
+
+
+@keyframes zoomBackground {
+
+  0%,
+  100% {
+    background-size: 100%;
   }
 
-  /* Define the keyframes for the animation */
- @keyframes zoomBackground {
-    0%, 100% {
-      background-size: 100%;
-    }
-    50% {
-      background-size: 120%; /* Adjust for desired zoom level */
-    }
+  50% {
+    background-size: 120%;
   }
+}
 
 
 .aboutMeSection::after {
@@ -48,7 +51,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  background-color: rgba(255, 255, 255, 0.8); 
+  background-color: rgba(255, 255, 255, 0.8);
 }
 
 .aboutMeContent::-webkit-scrollbar {
@@ -60,7 +63,7 @@
   margin: 3rem;
 }
 
-/* Media Queries */
+
 @media (min-width: 400px) and (max-width: 634px) {
   .aboutMeContent p:first-child {
     font-style: italic;
@@ -127,7 +130,7 @@
 }
 
 .buttonLink {
-  background-color: #e4e4e3; 
+  background-color: #e4e4e3;
   border: 0.15rem solid #c95164;
   border-radius: 6px;
   padding: 0.4rem 1.2rem;
@@ -259,20 +262,17 @@
   }
 
   .aboutMeImage {
-    margin: 3rem;    /* Adjust margin as needed */
+    margin: 3rem;
     width: auto;
-    /* Adjust width to be responsive */
     max-width: 100%;
-    /* Ensure image doesn't overflow its container */
     height: auto;
     align-self: center;
-    /* Center align the image within the flex container */
+
   }
 
 
   .aboutMeImage img {
     width: 100%;
-    /* Make the image fill the container */
     height: auto;
   }
 
@@ -282,9 +282,9 @@
 
   }
 
-  .aboutMeContext{
-  margin-bottom: 3rem;
-  margin-top: 2rem;
+  .aboutMeContext {
+    margin-bottom: 3rem;
+    margin-top: 2rem;
   }
 }
 
@@ -294,9 +294,9 @@
   }
 
   .aboutMeText {
-    width: 40rem; 
+    width: 40rem;
     padding-bottom: 3rem;
-    max-width: calc(100% - 6rem); 
+    max-width: calc(100% - 6rem);
   }
 
   .techHeading {
@@ -327,10 +327,10 @@
   .aboutMeContent {
     display: flex;
     flex-direction: column;
-    align-items: center; 
+    align-items: center;
     overflow-y: auto;
-    position:absolute;
-    max-height: calc(100vh - 3rem); 
+    position: absolute;
+    max-height: calc(100vh - 3rem);
     margin: 3rem 3rem 3rem 3rem;
   }
 
@@ -339,30 +339,32 @@
   }
 
   .aboutMeImage img {
-    width: 100%; 
+    width: 100%;
     height: auto;
-    width: 720px; /* Fixed maximum width */
-    height: 383.03px; /* Fixed maximum height */
+    width: 720px;
+    height: 383.03px;
   }
 
   .aboutMeContext {
-  margin-left: 6rem;
-  margin-top: 4rem !important;
-}
+    margin-left: 6rem;
+    margin-top: 4rem !important;
+  }
 
-.aboutMeSection {
-    /* Add your animation properties here */
-    /* Example: Animate background position for a moving effect */
+  .aboutMeSection {
     animation: zoomBackground 20s ease-in-out infinite;
   }
 
-  /* Define the keyframes for the animation */
- @keyframes zoomBackground {
-    0%, 100% {
+
+  @keyframes zoomBackground {
+
+    0%,
+    100% {
       background-size: 100%;
     }
+
     50% {
-      background-size: 120%; /* Adjust for desired zoom level */
+      background-size: 120%;
+
     }
   }
 
@@ -382,12 +384,12 @@
 
 .aboutMeImage {
   margin: 3rem;
-    width: auto; 
-    max-width: 100%; 
-    height: auto;
-    align-self: center;
-    display: flex;
-    justify-content: center;
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  align-self: center;
+  display: flex;
+  justify-content: center;
 
 
 }
