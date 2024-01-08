@@ -8,17 +8,19 @@ interface ProjectCardProps {
 	imageUrl: string;
 	projectName: string;
 	subtitle: string;
-	description: string;
+	description: React.ReactNode;
 	technologies: string[];
 	index: number;
 	isActive: boolean;
+	siteUrl: string;
 	githubUrl: string;
 	images: string[];
 	onCardClick: () => void;
 }
 
 const ProjectCard: React.FC<ProjectCardProps> = ({
-	githubUrl = "https://github.com/Maheshinav/band-site.git",
+	githubUrl,
+	siteUrl,
 	imageUrl,
 	projectName,
 	subtitle,
@@ -31,7 +33,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
 	const [isModalOpen, setIsModalOpen] = useState(false);
 
 	const openModal = (event: React.MouseEvent) => {
-		event.stopPropagation();
+		event.stopPropagation(); // Prevent triggering card's onClick
 		setIsModalOpen(true);
 	};
 
@@ -51,8 +53,8 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
 						src={imageUrl}
 						alt={`Project ${index + 1}`}
 						className={galleryStyles.projectImage}
-						width={769}
-						height={433}
+						width={769} // Adjust as needed
+						height={433} // Adjust as needed
 						quality={90}
 					/>
 					<div className={galleryStyles.overlay}>
@@ -79,6 +81,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
 					subtitle={subtitle}
 					description={description}
 					githubUrl={githubUrl}
+					siteUrl={siteUrl}
 					images={images}
 				></Modal>
 			)}

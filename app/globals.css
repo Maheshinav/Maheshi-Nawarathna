@@ -145,20 +145,9 @@ border-radius: 0%;
 border-radius: 0;
 
 }
-.btn-ghost{
-
-color: #e17285;
-
-}
-
-.text-xl{
-text-transform: uppercase;
-font-size: medium;
-}
-
 .mb-4{
-margin-bottom: 0;
-color:#d56378;
-font-size: 1rem;
-font-weight: bold;
+font-size: 0.80rem;
+margin-bottom:-1rem;
+color:#9e123a;
+
 }

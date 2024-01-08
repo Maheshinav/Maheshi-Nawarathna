@@ -95,8 +95,13 @@ const AboutMeSection: React.FC<AboutMeSectionProps> = ({}) => {
 						familiar with programming. That was the time I had at the
 						Brainstation SE Bootcamp, where I go beyond what I always thought I
 						only can do. I am now confident as a full stack developer and doing
-						freelance projects with much knowledge and confidence. In 2023, I
-						was hit by Covid for 3 times yet I am on my journey!
+						freelance projects with much knowledge and confidence.
+					</p>
+					<p>
+						{" "}
+						Despite facing challenges, including being affected by Covid-19
+						thrice in 2023, my dedication to my coding journey remained
+						unshaken.
 					</p>
 					<p>
 						Apart from my passion for programming I have my own creative demon

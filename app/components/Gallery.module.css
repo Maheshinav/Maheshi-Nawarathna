@@ -107,3 +107,12 @@
 .projectCard {
 	align-items: flex-start;
 }
+.projectDescriptionLink {
+    color: #e17285; 
+    text-decoration: none; 
+    transition: color 0.3s ease; 
+}
+
+.projectDescriptionLink:hover {
+    color: #c95164; 
+}
