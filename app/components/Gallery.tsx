@@ -142,7 +142,7 @@ const ProjectsGallery: React.FC<ProjectsGalleryProps> = ({ activeTab }) => {
 		},
 		{
 			imageUrl:
-				"https://res.cloudinary.com/dchzjr4bz/image/upload/v1704565978/vancity-thumbnail_fxxgpm.png",
+				"https://res.cloudinary.com/dchzjr4bz/image/upload/v1704705088/vancity-thumbnail-1_kn36rt.png",
 			projectName: "Vancity Cleaning",
 			subtitle: "Commercial Cleaning Service",
 			description: "Website for the Vancity Cleaning, provide booking options and information about the company and services to users",
@@ -151,7 +151,6 @@ const ProjectsGallery: React.FC<ProjectsGalleryProps> = ({ activeTab }) => {
 			siteUrl: "https://vancitycleaningservice.com",
 			images: [
 				"https://res.cloudinary.com/dchzjr4bz/image/upload/v1704567061/vancity-2_q5tcjd.png",
-				"https://res.cloudinary.com/dchzjr4bz/image/upload/v1704566916/vancity-3_i0ntps.png",
 				"https://res.cloudinary.com/dchzjr4bz/image/upload/v1704567359/vancity-4_xsfnec.png",
 			],
 		},
