@@ -126,7 +126,7 @@ const AboutMeSection: React.FC<AboutMeSectionProps> = ({}) => {
 							Projects
 						</span>
 						<a
-							href="/Maheshi-Nawarathna-Resume.pdf"
+							href="/Maheshi-Nawarathna.pdf"
 							target="_blank"
 							rel="noopener noreferrer"
 							className={`${styles.buttonLink} ${styles.resumeButton}`}
