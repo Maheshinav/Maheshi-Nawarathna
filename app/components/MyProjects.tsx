@@ -29,11 +29,11 @@ const MyProjects: React.FC<MyProjectsProps> = ({}) => {
 				<a
 					role="tab"
 					className={`tab ${
-						activeTab === "MINI_WORKS" ? styles.activeTab : ""
+						activeTab === "FREELANCE" ? styles.activeTab : ""
 					}`}
-					onClick={() => setActiveTab("MINI_WORKS")}
+					onClick={() => setActiveTab("FREELANCE")}
 				>
-					MINI WORKS
+				FREELANCE
 				</a>
 			</div>
 

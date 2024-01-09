@@ -154,6 +154,21 @@ const ProjectsGallery: React.FC<ProjectsGalleryProps> = ({ activeTab }) => {
 				"https://res.cloudinary.com/dchzjr4bz/image/upload/v1704567359/vancity-4_xsfnec.png",
 			],
 		},
+
+		{
+			imageUrl:
+				"https://res.cloudinary.com/dchzjr4bz/image/upload/v1704782132/paw-love-thumbnail_jetaqs.png",
+			projectName: "PawLove",
+			subtitle: "Community Care About Cats",
+			description: "A platform for cat lovers to share anything they love about cats and make a network to help Cats in crisis",
+			technologies: ["Firebase","React", "JavaScript", "Bootstrap", "Sass"],
+			githubUrl: "https://github.com/Maheshinav/Paw-Love.git",
+			siteUrl: "",
+			images: [
+				"https://res.cloudinary.com/dchzjr4bz/image/upload/v1704781699/pawlove-1_ahebz6.png",
+				"https://res.cloudinary.com/dchzjr4bz/image/upload/v1704783730/paw-love-2_jetfzs.png",
+			],
+		},
 	];
 
 	useEffect(() => {
@@ -162,9 +177,9 @@ const ProjectsGallery: React.FC<ProjectsGalleryProps> = ({ activeTab }) => {
 
 	const filteredProjects = projectData.filter((project) => {
 		if (activeTab === "ALL") return true;
-		if (activeTab === "MINI_WORKS") {
+		if (activeTab === "FREELANCE") {
 			return (
-				project.projectName === "PAWLOVE" || project.projectName === "LYROCAT"
+				project.projectName === "PawLove" || project.projectName === "LYROCAT"
 			);
 		}
 		return false;
