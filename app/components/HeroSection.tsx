@@ -58,10 +58,10 @@ const Hero: React.FC<HeroProps> = ({ id }) => {
 					<div className={styles.buttonContainer}>
 						<button
 							ref={buttonRef}
-							className={styles.heroButton}
+						className={styles.heroButton} 
 							onClick={handleSeeMoreClick}
 						>
-							See More
+						See More
 						</button>
 					</div>
 				</div>

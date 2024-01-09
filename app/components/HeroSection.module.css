@@ -40,14 +40,19 @@
 
     .heroImageText {
         font-size: 1.5rem; 
-        margin-top: 2rem; 
+        margin-top: 0rem; 
     }
 
     .heroContent {
         margin-top: 4rem; 
     }
-
-   
+.heroButton{
+margin-top: 0 !important;
+padding:0.01rem 0.6rem !important;
+}
+   .buttonContainer{
+	 margin-top: 0.2rem !important;;
+	 }
 }
 
 
