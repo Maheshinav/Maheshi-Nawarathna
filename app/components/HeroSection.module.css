@@ -27,6 +27,29 @@
 	background-color: #c95164;
 	border-radius: 0;
 }
+@media (min-width: 320px) and (max-width: 400px) {
+    .heroParagraph {
+        font-size: 0.8rem;
+        line-height: 1rem;
+        width: 7rem;
+    }
+
+    .heroImage {
+        height: 17rem; 
+    }
+
+    .heroImageText {
+        font-size: 1.5rem; 
+        margin-top: 2rem; 
+    }
+
+    .heroContent {
+        margin-top: 4rem; 
+    }
+
+   
+}
+
 
 @media (min-width: 400px) and (max-width: 634px) {
 	.heroImage {
@@ -40,6 +63,7 @@
 	.heroContentWrapper {
 		margin-top: 4rem;
 	}
+	
 }
 
 @media (min-width: 635px) and (max-width: 767px) {
