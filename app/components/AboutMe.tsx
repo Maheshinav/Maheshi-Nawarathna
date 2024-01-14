@@ -82,34 +82,29 @@ const AboutMeSection: React.FC<AboutMeSectionProps> = ({}) => {
 					<br />
 					<p>
 						I like to bring innovative ideas into action with my programming
-						knowledge. What makes me more happy as a programmer is my ability to
-						make delightful digital solutions with much effort and see how it
-						makes peoples' lives more easy going. Better user experience,
-						creative representation of the solution are some of the main things
-						I care about when I am developing software.
+						skills while making them beautiful for a better User Experience. 
 					</p>
 					<p>
 						Arts stream was for my higher education and then I had my Bachelors
 						in IT & Management where I learned about computer's language. Then I
 						arrived in Canada for my Masters later decided to go back to get
-						familiar with programming. That was the time I had at the
-						Brainstation SE Bootcamp, where I go beyond what I always thought I
-						only can do. I am now confident as a full stack developer and doing
-						freelance projects with much knowledge and confidence.
+						familiar with programming again. That was the time I had at the
+						Brainstation SE Bootcamp, where I went beyond what I always thought I
+						only can do and updated my tech stack. I am now confident as a full stack developer and doing
+						freelance projects with much knowledge.
 					</p>
 					<p>
 						{" "}
-						Despite facing challenges, including being affected by Covid-19
-						thrice in 2023, my dedication to my coding journey remained
+						Despite facing challenges my dedication to my coding journey remained
 						unshaken.
 					</p>
 					<p>
 						Apart from my passion for programming I have my own creative demon
-						always wants to read a book and live inside that world for sometime
+						always wants to read a book
 						and I believe that is why I became a good problem solver; books have
 						all the different kinds of problems in the whole world. So the
-						problems I encounter while programming, I accept them with much
-						courage! Again, I write short stories for children and sometimes I
+						problems I encounter while programming, I always find a way to solve them! 
+						Again, I write short stories for children and sometimes I
 						illustrate for them. They are my hobbies. And I love cats where I
 						always hug them when I want a little comfort away from the stress!
 					</p>

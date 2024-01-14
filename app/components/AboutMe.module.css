@@ -62,7 +62,50 @@
 .aboutMeImage {
   margin: 3rem;
 }
+@media (min-width: 320px) and (max-width: 400px) {
 
+ .aboutMeContent p:first-child {
+    font-style: italic;
+    font-size: 0.90rem;
+    line-height: 1.4rem;
+    font-weight: bold;
+
+  }
+   .aboutMeContent p {
+    font-size: 0.90rem;
+    line-height: 1.4rem;
+  }
+ .aboutMeSection .aboutMeContent p{
+  margin-bottom: 1rem;
+  
+  }
+
+  .techHeading {
+  font-size: 0.90rem !important;
+  }
+  .technologyText {
+  font-weight: normal;
+  font-size: 0.85rem !important;
+}
+.linksHeadings{
+font-size: 0.90rem !important;
+
+}
+
+.buttonLink {
+width:12rem !important;
+ font-size: 0.80rem !important;
+}
+
+.aboutMeText{
+padding-left: 0.2rem  !important;
+padding-right: 0.2rem  !important;
+}
+.aboutMeImage{
+padding-left: 0 !important;
+padding-right: 0 !important;
+}
+}
 
 @media (min-width: 400px) and (max-width: 634px) {
   .aboutMeContent p:first-child {
@@ -74,6 +117,8 @@
     font-size: 0.95rem;
     line-height: 1.6rem;
   }
+
+ 
 }
 
 @media (min-width: 635px) and (max-width: 767px) {
@@ -370,7 +415,6 @@
 
 }
 
-.aboutMeImage,
 .aboutMeText {
   padding-left: 3rem;
   padding-right: 3rem;

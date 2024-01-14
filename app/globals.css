@@ -75,6 +75,7 @@ h2 {
 @media (max-width: 767px) {
 .modal-box{
 max-width: none!important;
+max-height:50vh;
 }
 
 
