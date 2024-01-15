@@ -99,7 +99,7 @@ const AboutMeSection: React.FC<AboutMeSectionProps> = ({}) => {
 						remained unshaken.
 					</p>
 					<p>
-						Apart from my passion for programming I have my own creative demon
+						Apart from my passion for programming I have my own creative deamon
 						always wants to read a book and I believe that is why I became a
 						good problem solver; books have all the different kinds of problems
 						in the whole world. So the problems I encounter while programming, I
