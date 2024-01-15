@@ -57,23 +57,22 @@ const AboutMeSection: React.FC<AboutMeSectionProps> = ({}) => {
 
 	return (
 		<section id="about-me" ref={sectionRef} className={styles.aboutMeSection}>
-			<div className={styles.aboutMeContent}>
+			<header className={styles.aboutMeContent}>
 				<div>
 					<div className={styles.aboutMeContext}>
 						<h3 className={styles.headings}>Maheshi Nawarathna</h3>
 						<h2 className={styles.header}>About</h2>
 					</div>
-					<div>
-						<div className={styles.aboutMeImage}>
-							<img
-								src="https://res.cloudinary.com/dchzjr4bz/image/upload/v1704412485/pro_pic_2_mo0wnm.png"
-								alt="maheshi headshot"
-							/>
-						</div>
-					</div>
+
+					<figure className={styles.aboutMeImage}>
+						<img
+							src="https://res.cloudinary.com/dchzjr4bz/image/upload/v1704412485/pro_pic_2_mo0wnm.png"
+							alt="maheshi headshot"
+						/>
+					</figure>
 				</div>
 
-				<div className={styles.aboutMeText}>
+				<article className={styles.aboutMeText}>
 					<p>
 						I am a full stack developer based in Canada, everyday learning and
 						conceptualizing new things to deliver beautiful and useful software
@@ -82,31 +81,32 @@ const AboutMeSection: React.FC<AboutMeSectionProps> = ({}) => {
 					<br />
 					<p>
 						I like to bring innovative ideas into action with my programming
-						skills while making them beautiful for a better User Experience. 
+						skills while making them beautiful for a better User Experience.
 					</p>
 					<p>
 						Arts stream was for my higher education and then I had my Bachelors
 						in IT & Management where I learned about computer's language. Then I
 						arrived in Canada for my Masters later decided to go back to get
 						familiar with programming again. That was the time I had at the
-						Brainstation SE Bootcamp, where I went beyond what I always thought I
-						only can do and updated my tech stack. I am now confident as a full stack developer and doing
-						freelance projects with much knowledge.
+						Brainstation SE Bootcamp, where I went beyond what I always thought
+						I only can do and updated my tech stack. I am now confident as a
+						full stack developer and doing freelance projects with much
+						knowledge.
 					</p>
 					<p>
 						{" "}
-						Despite facing challenges my dedication to my coding journey remained
-						unshaken.
+						Despite facing challenges my dedication to my coding journey
+						remained unshaken.
 					</p>
 					<p>
 						Apart from my passion for programming I have my own creative demon
-						always wants to read a book
-						and I believe that is why I became a good problem solver; books have
-						all the different kinds of problems in the whole world. So the
-						problems I encounter while programming, I always find a way to solve them! 
-						Again, I write short stories for children and sometimes I
-						illustrate for them. They are my hobbies. And I love cats where I
-						always hug them when I want a little comfort away from the stress!
+						always wants to read a book and I believe that is why I became a
+						good problem solver; books have all the different kinds of problems
+						in the whole world. So the problems I encounter while programming, I
+						always find a way to solve them! Again, I write short stories for
+						children and sometimes I illustrate for them. They are my hobbies.
+						And I love cats where I always hug them when I want a little comfort
+						away from the stress!
 					</p>
 					<h3 className={styles.techHeading}>Technologies and Skills</h3>
 					<p className={styles.technologyText}>{technologies.join(", ")}</p>
@@ -129,8 +129,8 @@ const AboutMeSection: React.FC<AboutMeSectionProps> = ({}) => {
 							Resume
 						</a>
 					</div>
-				</div>
-			</div>
+				</article>
+			</header>
 		</section>
 	);
 };

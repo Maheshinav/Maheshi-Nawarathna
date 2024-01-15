@@ -159,7 +159,7 @@ margin-left: auto;
 
 @media screen and (max-width: 767px) {
 	.modalContent {
-		width: 80vw;
+		width: 100vw;
 	}
 
 	.carouselContainer {

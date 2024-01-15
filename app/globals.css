@@ -1,154 +1,147 @@
 @import url("https://use.typekit.net/jjc2zex.css");
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-
-
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-  --tw-scale-x: 1;
-  --tw-scale-y: 1;
+	--foreground-rgb: 0, 0, 0;
+	--background-start-rgb: 214, 219, 220;
+	--background-end-rgb: 255, 255, 255;
+	--tw-scale-x: 1;
+	--tw-scale-y: 1;
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+	:root {
+		--foreground-rgb: 255, 255, 255;
+		--background-start-rgb: 0, 0, 0;
+		--background-end-rgb: 0, 0, 0;
+	}
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
-      margin: 0;
-      padding: 0;
+	color: rgb(var(--foreground-rgb));
+	background: linear-gradient(
+			to bottom,
+			transparent,
+			rgb(var(--background-end-rgb))
+		)
+		rgb(var(--background-start-rgb));
+	margin: 0;
+	padding: 0;
 }
 
 h1 {
-  font-family: "source-sans-pro", sans-serif;
-  font-weight: 900;
-  font-style: normal;
-  font-size: 4.374rem;
-  letter-spacing: 0.125rem;
-  line-height: 5rem;
-  color: #3A4046;
+	font-family: "source-sans-pro", sans-serif;
+	font-weight: 900;
+	font-style: normal;
+	font-size: 4.374rem;
+	letter-spacing: 0.125rem;
+	line-height: 5rem;
+	color: #3a4046;
 }
 
 p {
-  font-family: "OpenSans", sans-serif;
-  font-size: 1.125rem;
-  font-style: normal;
-  font-weight: normal;
-  letter-spacing: 0.063rem;
-  line-height: 2rem;
-  color: #5D656C;
+	font-family: "OpenSans", sans-serif;
+	font-size: 1.125rem;
+	font-style: normal;
+	font-weight: normal;
+	letter-spacing: 0.063rem;
+	line-height: 2rem;
+	color: #5d656c;
 }
 
 @keyframes gradientBackground {
-  0% { background-color: #fdf2f8; }
-  20% { background-color: #fce7f3; }
-  40% { background-color: #fbcfe8; }
-  60% { background-color: #f9a8d4; }
-  80% { background-color: #f472b6; }
-  100% { background-color: #fdf2f8; }
+	0% {
+		background-color: #fdf2f8;
+	}
+	20% {
+		background-color: #fce7f3;
+	}
+	40% {
+		background-color: #fbcfe8;
+	}
+	60% {
+		background-color: #f9a8d4;
+	}
+	80% {
+		background-color: #f472b6;
+	}
+	100% {
+		background-color: #fdf2f8;
+	}
 }
 
 h2 {
-  font-family: "OpenSans", sans-serif;
-  font-size: 1.5rem;
-  font-style: normal;
-  font-weight: 900;
-  letter-spacing: 0.063rem;
-  line-height: 2rem;
-  color: #3A4046;
+	font-family: "OpenSans", sans-serif;
+	font-size: 1.5rem;
+	font-style: normal;
+	font-weight: 900;
+	letter-spacing: 0.063rem;
+	line-height: 2rem;
+	color: #3a4046;
 }
 
 @media (max-width: 767px) {
-.modal-box{
-max-width: none!important;
-max-height:50vh;
+	.modal-box {
+		max-width: none !important;
+		max-height: 50vh;
+	}
 }
 
-
-
+.modal-box {
+	padding: 0;
+	border-radius: 0 !important;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	overflow-y: auto;
+	padding: 0;
+	margin: 0;
+	max-height: 10000000000vh;
+	--tw-scale-x: 1;
+	--tw-scale-y: 1;
 }
-
-.modal-box{
-padding:0;
-border-radius: 0 !important;
-width:100%;
-  display: flex;
-  flex-direction: column;
-  overflow-y: auto;
-  padding: 0;
-  margin: 0;
- max-height: 10000000000vh;
- --tw-scale-x: 1; 
-  --tw-scale-y: 1; 
-
-}
-
-
-
-
 
 @media (min-width: 768px) and (max-width: 1279px) {
-
-.modal-box{
-max-width: 90vw !important;
-
-}
-
+	.modal-box {
+		max-width: 90vw !important;
+	}
 }
 @media (min-width: 1280px) {
-.modal-box{
-max-width: 50vw !important;
-}
-
-
-
+	.modal-box {
+		max-width: 50vw !important;
+	}
 }
 
 html {
-    scroll-behavior: smooth;
+	scroll-behavior: smooth;
 }
 
-.navbar{
-
-min-height:2.4rem;
+.navbar {
+	min-height: 2.4rem;
 }
-
 
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
-.projectDescription{
-line-height: normal;
+.projectDescription {
+	line-height: normal;
 }
-.btn{
-box-shadow: none;
-border-radius: 0%;
+.btn {
+	box-shadow: none;
+	border-radius: 0%;
 }
 
-.button{
-
-border-radius: 0;
-
+.button {
+	border-radius: 0;
 }
-.mb-4{
-font-size: 0.80rem;
-margin-bottom:-1rem;
-color:#9e123a;
-
+.mb-4 {
+	font-size: 0.8rem;
+	margin-bottom: -1rem;
+	color: #9e123a;
 }

@@ -1,6 +1,5 @@
 "use client";
-
-import React, { useState } from "react";
+import { useState } from "react";
 import ProjectsGallery from "./Gallery";
 import styles from "./MyProjects.module.css";
 
@@ -28,12 +27,10 @@ const MyProjects: React.FC<MyProjectsProps> = ({}) => {
 				</a>
 				<a
 					role="tab"
-					className={`tab ${
-						activeTab === "FREELANCE" ? styles.activeTab : ""
-					}`}
+					className={`tab ${activeTab === "FREELANCE" ? styles.activeTab : ""}`}
 					onClick={() => setActiveTab("FREELANCE")}
 				>
-				FREELANCE
+					FREELANCE
 				</a>
 			</div>
 
