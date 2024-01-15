@@ -47,7 +47,6 @@
 	height: auto;
 	object-fit: cover;
 	object-position: center top;
-	
 }
 
 .prevButton,
@@ -107,33 +106,36 @@
 	align-items: center;
 	justify-content: flex-end;
 	width: 100%;
-	 gap: 10px;
+	gap: 10px;
+	position: absolute;
+	bottom: 0;
 }
 
 .githubButton {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  	background-color: #c95164;
-    color: white;
-    border: none;
-    cursor: pointer;
-    font-size: 0.80rem;
-    width: 5rem;
-    height: 2rem;
-    gap: 0.5rem;
-		transition: background-color 0.3s, color 0.3s;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #c95164;
+	color: white;
+	border: none;
+	cursor: pointer;
+	font-size: 0.8rem;
+	width: 5rem;
+	height: 2rem;
+	gap: 0.5rem;
+	transition: background-color 0.3s, color 0.3s;
 }
 
 .githubButton:hover {
-    background-color: transparent; 
-    color: #c95164; 
+	background-color: transparent;
+	color: #c95164;
 }
 
 .githubButton svg {
-    width: 1em;
-    height: 1em; 
+	width: 1em;
+	height: 1em;
 }
+
 .closeButton svg {
 	fill: currentColor;
 	width: 15px;
@@ -141,7 +143,7 @@
 }
 
 .closeButton {
-margin-left: auto; 
+	margin-left: auto;
 	background: none;
 	border: none;
 	cursor: pointer;
@@ -152,9 +154,8 @@ margin-left: auto;
 }
 
 .closeButton:hover {
-    background: none; 
-    color: inherit;
-   
+	background: none;
+	color: inherit;
 }
 
 @media screen and (max-width: 767px) {
@@ -184,6 +185,7 @@ margin-left: auto;
 }
 
 @media (min-width: 768px) and (max-width: 1279px) {
+
 	.prevButton,
 	.nextButton {
 		height: 4rem;
@@ -195,15 +197,15 @@ margin-left: auto;
 	}
 
 	.imageContainer {
-		top:-1rem;
+		top: -1rem;
 	}
-.modal-box{
-max-width:90vw;
 
-}
+	.modal-box {
+		max-width: 90vw;
+	}
+
 	.projectInfo {
 		width: 100%;
-
 	}
 
 	.projectDescription {
@@ -235,9 +237,8 @@ max-width:90vw;
 		width: 20px;
 		height: 20px;
 	}
-
-
 }
+
 @media (min-width: 1280px) {
 	.modalContent {
 		max-width: 50vw;
@@ -281,5 +282,8 @@ max-width:90vw;
 		top: -1rem;
 	}
 }
-.githubButton, .closeButton {
-    flex-shrink: 0; }
+
+.githubButton,
+.closeButton {
+	flex-shrink: 0;
+}
