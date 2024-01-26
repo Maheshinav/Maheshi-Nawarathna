@@ -43,16 +43,20 @@ const AboutMeSection: React.FC<AboutMeSectionProps> = ({}) => {
 		"CSS/Sass",
 		"Bootstrap",
 		"Tailwind CSS",
+		"Material UI",
 		"Daisy UI",
 		"GSAP Web Animation",
 		"MySQL",
 		"MongoDB",
 		"Firebase",
 		"REST API",
-		"Figma",
 		"PHP",
 		"WordPress",
 		"JWT",
+		"Figma",
+		"Photoshop",
+		"Adobe Fresco",
+		"Heroku",
 	];
 
 	return (
@@ -84,29 +88,23 @@ const AboutMeSection: React.FC<AboutMeSectionProps> = ({}) => {
 						skills while making them beautiful for a better User Experience.
 					</p>
 					<p>
-						Arts stream was for my higher education and then I had my Bachelors
-						in IT & Management where I learned about computer's language. Then I
-						arrived in Canada for my Masters later decided to go back to get
-						familiar with programming again. That was the time I had at the
-						Brainstation SE Bootcamp, where I went beyond what I always thought
-						I only can do and updated my tech stack. I am now confident as a
-						full stack developer and doing freelance projects with much
-						knowledge.
+						To refresh my skills and rekindle my enthusiasm, I attended a
+						Software Engineering Bootcamp at Brainstation. This intensive,
+						project-based program was a crucial step towards re-entering the
+						career I'm most passionate about.
 					</p>
 					<p>
 						{" "}
-						Despite facing challenges my dedication to my coding journey
-						remained unshaken.
+						It's been a challenging journey, but I’m committed to it and
+						continue to code with determination.
 					</p>
 					<p>
-						Apart from my passion for programming I have my own creative deamon
-						always wants to read a book and I believe that is why I became a
-						good problem solver; books have all the different kinds of problems
-						in the whole world. So the problems I encounter while programming, I
-						always find a way to solve them! Again, I write short stories for
-						children and sometimes I illustrate for them. They are my hobbies.
-						And I love cats where I always hug them when I want a little comfort
-						away from the stress!
+						I'm not just a programmer; I'm also an avid book lover, which I
+						believe enhances my problem-solving abilities. Books encompass all
+						kinds of problems, teaching me how to tackle challenges and find
+						solutions. Besides, I love cats! They often play with my keyboard,
+						causing syntax errors, but they also help throw away my stress with
+						their 'purr' codes.
 					</p>
 					<h3 className={styles.techHeading}>Technologies and Skills</h3>
 					<p className={styles.technologyText}>{technologies.join(", ")}</p>

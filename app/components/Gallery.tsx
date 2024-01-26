@@ -145,7 +145,8 @@ const ProjectsGallery: React.FC<ProjectsGalleryProps> = ({ activeTab }) => {
 				"https://res.cloudinary.com/dchzjr4bz/image/upload/v1704705088/vancity-thumbnail-1_kn36rt.png",
 			projectName: "Vancity Cleaning",
 			subtitle: "Commercial Cleaning Service",
-			description: "Website for the Vancity Cleaning, provide booking options and information about the company and services to users",
+			description:
+				"Website for the Vancity Cleaning, provide booking options and information about the company and services to users",
 			technologies: ["WordPress"],
 			githubUrl: "",
 			siteUrl: "https://vancitycleaningservice.com",
@@ -160,8 +161,9 @@ const ProjectsGallery: React.FC<ProjectsGalleryProps> = ({ activeTab }) => {
 				"https://res.cloudinary.com/dchzjr4bz/image/upload/v1704782132/paw-love-thumbnail_jetaqs.png",
 			projectName: "PawLove",
 			subtitle: "Community Care About Cats",
-			description: "A platform for cat lovers to share anything they love about cats and make a network to help Cats in crisis",
-			technologies: ["Firebase","React", "JavaScript", "Bootstrap", "Sass"],
+			description:
+				"A platform for cat lovers to share anything they love about cats and make a network to help Cats in crisis",
+			technologies: ["Firebase", "React", "JavaScript", "Bootstrap", "Sass"],
 			githubUrl: "https://github.com/Maheshinav/Paw-Love.git",
 			siteUrl: "",
 			images: [
