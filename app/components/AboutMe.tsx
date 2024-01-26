@@ -88,7 +88,6 @@ const AboutMeSection: React.FC<AboutMeSectionProps> = ({}) => {
 						skills while making them beautiful for a better User Experience.
 					</p>
 					<p>
-						{" "}
 						I pursued my higher studies in Liberal Arts and Humanities, which
 						later led me to an honours degree in IT and Management. This
 						combination helped me amass a wealth of knowledge in computer
